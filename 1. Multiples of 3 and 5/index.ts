@@ -1,16 +1,20 @@
-const target = 1000;
-const multiples = [3, 5];
+import { $isFactorial } from '../shared/index';
 
-let sum: number = 0;
+(function() {
+    const target = 1000;
+    const multiples = [3, 5];
 
-for (let x = 1; x < target; x++) {
-    const isMultiple: boolean = multiples.reduce<boolean>((isMultiple: boolean, multiple: number): boolean => {
-        return isMultiple || x % multiple === 0;
-    }, false);
+    let sum: number = 0;
 
-    if (isMultiple) {
-        sum += x;
+    for (let x = 1; x < target; x++) {
+        const isMultiple: boolean = multiples.reduce<boolean>((isMultiple: boolean, multiple: number): boolean => {
+            return isMultiple || $isFactorial(x, multiple);
+        }, false);
+
+        if (isMultiple) {
+            sum += x;
+        }
     }
-}
 
-console.log(sum);
+    console.log(sum);
+})();
