@@ -1,7 +1,7 @@
-import { $isInteger, $reverseString } from '../shared';
+import { $isInteger, $perf, $reverseString } from '../shared';
 
-(function() {
-    const digits = 3;
+$perf(function() {
+    const digits = 5;
 
     let numberString: string = '';
 
@@ -34,4 +34,4 @@ import { $isInteger, $reverseString } from '../shared';
             throw new Error(`Cannot find factors for ${digits} digit number`);
         }
     }
-})();
+});

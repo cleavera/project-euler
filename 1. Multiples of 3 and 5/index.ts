@@ -1,6 +1,6 @@
-import { isFactorial } from '../shared/index';
+import { $perf, $isFactorial } from '../shared';
 
-(function() {
+$perf(function() {
     const target = 1000;
     const multiples = [3, 5];
 
@@ -8,7 +8,7 @@ import { isFactorial } from '../shared/index';
 
     for (let x = 1; x < target; x++) {
         const isMultiple: boolean = multiples.reduce<boolean>((isMultiple: boolean, multiple: number): boolean => {
-            return isMultiple || isFactorial(x, multiple);
+            return isMultiple || $isFactorial(x, multiple);
         }, false);
 
         if (isMultiple) {
@@ -17,4 +17,4 @@ import { isFactorial } from '../shared/index';
     }
 
     console.log(sum);
-})();
+});

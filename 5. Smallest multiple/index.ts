@@ -1,6 +1,6 @@
-import { $isFactorial } from '../shared';
+import { $isFactorial, $perf } from '../shared';
 
-(function() {
+$perf(function() {
     const maxNumber = 20;
 
     let start: number = maxNumber - 2;
@@ -16,4 +16,4 @@ import { $isFactorial } from '../shared';
 
         return $isFactorial(value, factor) && checkFactors(value, --factor);
     }
-})();
+});

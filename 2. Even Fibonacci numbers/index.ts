@@ -1,6 +1,6 @@
-import { $isFactorial } from '../shared/index';
+import { $isFactorial, $perf } from '../shared/index';
 
-(function() {
+$perf(function() {
     const limit: number = 4E6;
 
     let sum = 0;
@@ -12,4 +12,4 @@ import { $isFactorial } from '../shared/index';
     }
 
     console.log(sum);
-})();
+});

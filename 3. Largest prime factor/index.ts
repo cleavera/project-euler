@@ -1,6 +1,6 @@
-import { $primeFactorials } from '../shared';
+import { $perf, $primeFactorials } from '../shared';
 
-(function() {
+$perf(function() {
     const num = 600851475143;
 
     console.log($primeFactorials(num).sort((a: number, b: number) => {
@@ -14,4 +14,4 @@ import { $primeFactorials } from '../shared';
 
         return 0;
     }));
-})();
+});

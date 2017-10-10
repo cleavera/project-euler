@@ -1,6 +1,6 @@
-import { $isPrime } from '../shared/is-prime';
+import { $isPrime, $perf } from '../shared';
 
-(function() {
+$perf(function() {
     const index = 10001;
 
     let primeCounter: number = 1;
@@ -17,4 +17,4 @@ import { $isPrime } from '../shared/is-prime';
     }
 
     console.log(lastPrime);
-})();
+});

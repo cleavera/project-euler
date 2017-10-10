@@ -1,6 +1,6 @@
-import { $series, $sumNumbersUpTo } from '../shared';
+import { $perf, $series, $sumNumbersUpTo } from '../shared';
 
-(function() {
+$perf(function() {
     const limit = 100;
 
     const sum = $sumNumbersUpTo(limit);
@@ -11,4 +11,4 @@ import { $series, $sumNumbersUpTo } from '../shared';
     }, limit);
 
     console.log(sumOfSquares, squareOfSum, squareOfSum - sumOfSquares);
-})();
+});
