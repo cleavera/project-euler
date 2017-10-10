@@ -7,5 +7,5 @@ export function $perf(cb: Function): void {
 
     const diff = process.hrtime(time);
 
-    console.log(`Benchmark took ${diff[0] + (diff[1] / NS_PER_SEC )} seconds`);
+    console.log(`${diff[0] + (diff[1] / NS_PER_SEC )} seconds`);
 }
