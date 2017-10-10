@@ -1,10 +1,10 @@
 /** @private **/
 import { $isInteger } from './is-integer';
 
-export function $primeFactorials(sum: number): Array<number> {
+export function $primeFactorials(product: number): Array<number> {
     let result: Array<number> = [];
 
-    getPrimeFactorial(sum);
+    getPrimeFactorial(product);
 
     return result;
 
