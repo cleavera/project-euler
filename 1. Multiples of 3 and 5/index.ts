@@ -1,4 +1,4 @@
-import { $isFactorial } from '../shared/index';
+import { isFactorial } from '../shared/index';
 
 (function() {
     const target = 1000;
@@ -8,7 +8,7 @@ import { $isFactorial } from '../shared/index';
 
     for (let x = 1; x < target; x++) {
         const isMultiple: boolean = multiples.reduce<boolean>((isMultiple: boolean, multiple: number): boolean => {
-            return isMultiple || $isFactorial(x, multiple);
+            return isMultiple || isFactorial(x, multiple);
         }, false);
 
         if (isMultiple) {

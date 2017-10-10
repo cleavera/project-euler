@@ -1,1 +1,2 @@
-export { $$isFactorial as $isFactorial } from './is-factorial';
+export { $isFactorial } from './is-factorial';
+export { $isInteger } from './is-integer';
