@@ -6,4 +6,5 @@ export { $perf } from './perf';
 export { $primeFactorials } from './prime-factorials';
 export { $reverseString } from './reverse-string';
 export { $series } from './series';
+export { $status } from './status';
 export { $sumNumbersUpTo } from './sum-numbers-up-to';

@@ -9,6 +9,8 @@
   "author": "Anthony Cleaver",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^8.0.33"
+    "@types/log-update": "^2.0.0",
+    "@types/node": "^8.0.33",
+    "log-update": "^2.1.0"
   }
 }

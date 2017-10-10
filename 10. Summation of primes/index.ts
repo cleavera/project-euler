@@ -7,7 +7,7 @@ $perf(() => {
 
     let x: number = 1;
 
-    while (x <= limit) {
+    while (x + 1 < limit) {
         x += 2;
 
         if ($isPrime(x)) {
