@@ -1,7 +1,7 @@
 import { $perf } from '../shared';
 
 /**
- * There is definitely an easy way of doing this
+ * There is definitely an easy way of doing this: (2n)!/(n!)²
  */
 
 $perf(() => {
