@@ -11,7 +11,11 @@ export function $factors(value: number): Array<number> {
         const result = value / testFactor;
 
         if ($isInteger(result)) {
-            factors.push(testFactor, result);
+            factors.push(testFactor);
+            if (result !== testFactor) {
+                factors.push(result);
+            }
+
             highestFactor = result;
         }
     }
