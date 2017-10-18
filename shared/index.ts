@@ -1,4 +1,5 @@
 export { $BigNum } from './big-num';
+export { $factorial } from './factorial';
 export { $isEven } from './is-even';
 export { $isFactorial } from './is-factorial';
 export { $isInteger } from './is-integer';
