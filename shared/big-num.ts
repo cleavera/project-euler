@@ -52,4 +52,8 @@ export class $BigNum {
     public clone(): $BigNum {
         return new $BigNum(this.digitArray);
     }
+
+    public toString(): string {
+        return this.digitArray.join('');
+    }
 }
