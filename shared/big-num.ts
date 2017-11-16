@@ -54,6 +54,12 @@ export class $BigNum {
     }
 
     public toString(): string {
-        return this.digitArray.join('');
+        let out = '';
+
+        for (let x = this.digitArray.length - 1; x >= 0; x--) {
+            out += this.digitArray[x].toString();
+        }
+
+        return out;
     }
 }
