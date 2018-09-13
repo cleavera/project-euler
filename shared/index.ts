@@ -1,3 +1,4 @@
+export { $forEach } from './for-each';
 export { $BigNum } from './big-num';
 export { $factorial } from './factorial';
 export { $isEven } from './is-even';
@@ -11,3 +12,4 @@ export { $reverseString } from './reverse-string';
 export { $series } from './series';
 export { $status } from './status';
 export { $sumNumbersUpTo } from './sum-numbers-up-to';
+
