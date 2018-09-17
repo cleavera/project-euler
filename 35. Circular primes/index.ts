@@ -1,6 +1,4 @@
-import { $isPrime, $perf } from '../shared';
-import { $assembleDigits } from '../shared/assemble-digits';
-import { $digits } from '../shared/digits';
+import { $answer, $assembleDigits, $digits, $isPrime, $perf } from '../shared';
 
 $perf(() => {
     const limit = 1e6;
@@ -30,5 +28,5 @@ $perf(() => {
         }
     }
 
-    console.log(count);
+    $answer(count);
 });

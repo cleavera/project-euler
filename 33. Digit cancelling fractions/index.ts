@@ -1,6 +1,4 @@
-import { $perf } from '../shared';
-import { $digits } from '../shared/digits';
-import { $multiplyFraction } from '../shared/multiply-fraction';
+import { $answer, $digits, $multiplyFraction, $perf } from '../shared';
 
 $perf(() => {
     let product: [number, number] = [1, 1];
@@ -22,5 +20,5 @@ $perf(() => {
         }
     }
 
-    console.log(product[1]);
+    $answer(product[1]);
 });

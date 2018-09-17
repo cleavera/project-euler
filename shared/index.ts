@@ -1,3 +1,12 @@
+export { UniqueArray } from './unique-array';
+export { $multiplyFraction } from './multiply-fraction';
+export { $isPalindrome } from './is-palindrome';
+export { $concatenateNumbers } from './concatenate-numbers';
+export { $digits } from './digits';
+export { $choose } from './choose';
+export { $assembleDigits } from './assemble-digits';
+export { $isTriangleNumber } from './is-triangle-number';
+export { $answer } from './answer';
 export { $forEach } from './for-each';
 export { $BigNum } from './big-num';
 export { $factorial } from './factorial';
@@ -12,4 +21,3 @@ export { $reverseString } from './reverse-string';
 export { $series } from './series';
 export { $status } from './status';
 export { $sumNumbersUpTo } from './sum-numbers-up-to';
-

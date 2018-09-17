@@ -1,8 +1,4 @@
-import { $isPrime, $perf } from '../shared';
-import { $assembleDigits } from '../shared/assemble-digits';
-import { $concatenateNumbers } from '../shared/concatenate-numbers';
-import { $digits } from '../shared/digits';
-import { $forEach } from '../shared/for-each';
+import { $answer, $assembleDigits, $concatenateNumbers, $digits, $forEach, $isPrime, $perf } from '../shared';
 
 $perf(() => {
     const limit = 11;
@@ -29,7 +25,7 @@ $perf(() => {
         lastStep = checkNextStep(lastStep);
     }
 
-    console.log(sum);
+    $answer(sum);
 
     function isRightTruncatable(_prime: number): boolean {
         const digits = $digits(_prime);

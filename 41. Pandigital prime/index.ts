@@ -1,6 +1,4 @@
-import { $isPrime, $perf } from '../shared';
-import { $assembleDigits } from '../shared/assemble-digits';
-import { $choose } from '../shared/choose';
+import { $answer, $assembleDigits, $choose, $isPrime, $perf } from '../shared';
 
 $perf(() => {
     const digits: Array<number> = [
@@ -20,9 +18,7 @@ $perf(() => {
             const number = $assembleDigits(reorderedArray);
 
             if ($isPrime(number)) {
-                console.log(number);
-
-                process.exit();
+                $answer(number);
             }
         });
 

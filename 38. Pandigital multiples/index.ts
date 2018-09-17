@@ -1,6 +1,4 @@
-import { $perf } from '../shared';
-import { $concatenateNumbers } from '../shared/concatenate-numbers';
-import { $digits } from '../shared/digits';
+import { $answer, $concatenateNumbers, $digits, $perf } from '../shared';
 
 $perf(() => {
     const start = 98765;
@@ -17,8 +15,7 @@ $perf(() => {
 
         if (length === 9) {
             if ($digits(num).sort().join('') === '123456789') {
-                console.log(num);
-                break;
+                $answer(num);
             }
         }
     }

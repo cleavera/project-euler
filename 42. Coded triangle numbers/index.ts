@@ -1,7 +1,6 @@
 import * as fs from "fs";
 import * as path from "path";
-import { $perf } from '../shared';
-import { $isTriangleNumber } from '../shared/is-triangle-number';
+import { $answer, $isTriangleNumber, $perf } from '../shared';
 
 $perf(async (): Promise<void> => {
     const data: Array<string> = await getData();
@@ -17,7 +16,7 @@ $perf(async (): Promise<void> => {
         }
     });
 
-    console.log(count);
+    $answer(count);
 
     async function getData(): Promise<Array<string>> {
         return new Promise<Array<string>>((resolve, reject) => {

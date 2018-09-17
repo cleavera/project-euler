@@ -1,4 +1,4 @@
-import { $perf } from '../shared';
+import { $answer, $perf } from '../shared';
 
 $perf(() => {
     const power = 5;
@@ -21,7 +21,7 @@ $perf(() => {
     }
 
     console.log(out.join(', '));
-    console.log(out.reduce((acc: number, value: number) => {
+    $answer(out.reduce((acc: number, value: number) => {
         return acc + value;
     }, 0));
 

@@ -1,6 +1,4 @@
-import { $perf } from '../shared';
-import { $choose } from '../shared/choose';
-import { UniqueArray } from '../shared/unique-array';
+import { $answer, $choose, $perf, UniqueArray } from '../shared';
 
 $perf(() => {
     const numbers = [
@@ -33,7 +31,7 @@ $perf(() => {
         }
     });
 
-    console.log(products.reduce((total: number, product: number): number => {
+    $answer(products.reduce((total: number, product: number): number => {
         return total + product;
     }, 0));
 });

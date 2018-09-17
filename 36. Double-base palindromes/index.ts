@@ -1,5 +1,4 @@
-import { $perf } from '../shared';
-import { $isPalindrome } from '../shared/is-palindrome';
+import { $answer, $isPalindrome, $perf } from '../shared';
 
 $perf(() => {
     const limit = 1e6;
@@ -11,5 +10,5 @@ $perf(() => {
         }
     }
 
-    console.log(sum);
+    $answer(sum);
 });

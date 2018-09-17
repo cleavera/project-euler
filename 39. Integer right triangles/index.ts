@@ -1,4 +1,4 @@
-import { $isInteger, $perf } from '../shared';
+import { $answer, $isInteger, $perf } from '../shared';
 
 $perf(() => {
     const limit = 1000;
@@ -20,7 +20,7 @@ $perf(() => {
         }
     }
 
-    console.log(`${record} with ${recordCount} solutions`);
+    $answer(`${record} with ${recordCount} solutions`);
 
     function checkMatches(p: number, a: number): boolean {
         const b: number = ((2 * p * a) - (p ** 2)) / ((2 * a) - (2 * p));

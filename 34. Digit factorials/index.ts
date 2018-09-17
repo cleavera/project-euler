@@ -1,5 +1,4 @@
-import { $factorial, $perf } from '../shared';
-import { $digits } from '../shared/digits';
+import { $answer, $digits, $factorial, $perf } from '../shared';
 
 $perf(() => {
     const limit = 1e7;
@@ -18,5 +17,5 @@ $perf(() => {
         }
     }
 
-    console.log(total);
+    $answer(total);
 });

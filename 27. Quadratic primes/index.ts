@@ -1,4 +1,4 @@
-import { $isEven, $isPrime, $perf } from '../shared';
+import { $answer, $isEven, $isPrime, $perf } from '../shared';
 
 $perf(() => {
     const limit = 1000;
@@ -34,7 +34,7 @@ $perf(() => {
     console.log(`     a: ${recordA}`);
     console.log(`     b: ${recordB}`);
 
-    console.log(`Result: ${recordA * recordB}`);
+    $answer(`Result: ${recordA * recordB}`);
 
     function quadraticFormula(n: number, a: number, b: number) {
         return (n * n) + (a * n) + b;

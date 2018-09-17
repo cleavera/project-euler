@@ -1,4 +1,4 @@
-import { $perf } from '../shared';
+import { $answer, $perf } from '../shared';
 
 $perf(() => {
     const target = 200;
@@ -35,5 +35,5 @@ $perf(() => {
         return;
     }
 
-    console.log(count);
+    $answer(count);
 });

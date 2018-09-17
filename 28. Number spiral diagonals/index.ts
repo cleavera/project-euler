@@ -1,4 +1,4 @@
-import { $perf } from '../shared';
+import { $answer, $perf } from '../shared';
 
 $perf(() => {
    const gridSize = 1001;
@@ -15,5 +15,5 @@ $perf(() => {
        }
    }
 
-   console.log(total);
+   $answer(total);
 });

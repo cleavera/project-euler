@@ -1,4 +1,4 @@
-import { $BigNum, $perf } from '../shared';
+import { $answer, $BigNum, $perf } from '../shared';
 
 $perf(() => {
     const limit = 100;
@@ -15,5 +15,5 @@ $perf(() => {
         }
     }
 
-    console.log(Object.keys(store).length);
+    $answer(Object.keys(store).length);
 });

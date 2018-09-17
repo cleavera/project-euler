@@ -1,4 +1,4 @@
-import { $perf } from '../shared';
+import { $answer, $perf } from '../shared';
 
 $perf(() => {
     const limit = 1e6;
@@ -17,5 +17,5 @@ $perf(() => {
         index *= 10;
     }
 
-    console.log(product);
+    $answer(product);
 });
