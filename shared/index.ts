@@ -1,3 +1,4 @@
+export { $isPentagonNumber } from './is-pentagon-number';
 export { UniqueArray } from './unique-array';
 export { $multiplyFraction } from './multiply-fraction';
 export { $isPalindrome } from './is-palindrome';
