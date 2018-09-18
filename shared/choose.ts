@@ -1,8 +1,8 @@
-export function $choose<T = any>(items: Array<T>, cb: (reorderedArray: Array<T>) => void): void {
-    choose(items.slice(), cb);
+export function $choose<T = any>(items: Array<T>, cb: (reorderedArray: Array<T>) => void, limit: number = items.length): void {
+    choose(items.slice(), cb, limit);
 
-    function choose(items: Array<T>, cb: (reorderedArray: Array<T>) => void, reordered: Array<T> = []): void {
-        if (!items.length) {
+    function choose(items: Array<T>, cb: (reorderedArray: Array<T>) => void, depth: number, reordered: Array<T> = []): void {
+        if (!depth) {
             cb(reordered);
 
             return;
@@ -18,6 +18,7 @@ export function $choose<T = any>(items: Array<T>, cb: (reorderedArray: Array<T>)
             choose(
                 clone,
                 cb,
+                depth - 1,
                 newReordered
             )
         }
