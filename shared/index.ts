@@ -1,3 +1,4 @@
+export { $sumArray } from './sum-array';
 export { $isSquareNumber } from './is-square-number';
 export { $getPrimesBelow } from './get-primes-below';
 export { $isPentagonNumber } from './is-pentagon-number';
