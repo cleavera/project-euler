@@ -1,5 +1,6 @@
 /** @private **/
 import { LIMIT, TRIANGLE_NUMBERS } from '../.cache/triangle-numbers.cache';
+import { $isInteger } from './index';
 
 export function $isTriangleNumber(a: number, useCache: boolean = true): boolean {
     if (a === 0) {
@@ -10,22 +11,9 @@ export function $isTriangleNumber(a: number, useCache: boolean = true): boolean 
 
     if (useCache) {
         if (a < LIMIT) {
-            return TRIANGLE_NUMBERS[a];
+            return !!TRIANGLE_NUMBERS[a];
         }
     }
 
-    let value: number = 1;
-    let x: number = 1;
-
-    while (value < a) {
-        value = (x^2 + x) / 2;
-
-        if (value === a) {
-            return true;
-        }
-
-        x++;
-    }
-
-    return false;
+    return $isInteger((Math.sqrt((8 * a) + 1) - 1) / 2);
 }
