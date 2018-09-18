@@ -1,3 +1,5 @@
+export { $isSquareNumber } from './is-square-number';
+export { $getPrimesBelow } from './get-primes-below';
 export { $isPentagonNumber } from './is-pentagon-number';
 export { UniqueArray } from './unique-array';
 export { $multiplyFraction } from './multiply-fraction';
