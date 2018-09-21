@@ -1,3 +1,4 @@
+export { $similar } from './similar';
 export { $generateNumberArray } from './generate-number-array';
 export { $sumArray } from './sum-array';
 export { $isSquareNumber } from './is-square-number';
