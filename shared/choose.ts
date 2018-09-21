@@ -1,4 +1,4 @@
-export function $choose<T = any>(items: Array<T>, cb: (reorderedArray: Array<T>) => void, limit: number = items.length): void {
+export function $choose<T = any>(items: Array<T>, cb: (reorderedArray: Array<T>) => void, limit: number = items.length, maintainOrder: boolean = true): void {
     choose(items.slice(), cb, limit);
 
     function choose(items: Array<T>, cb: (reorderedArray: Array<T>) => void, depth: number, reordered: Array<T> = []): void {
@@ -12,8 +12,14 @@ export function $choose<T = any>(items: Array<T>, cb: (reorderedArray: Array<T>)
             const newReordered = reordered.slice();
             newReordered.push(items[x]);
 
-            const clone = items.slice();
-            clone.splice(x, 1);
+            let clone: Array<T>;
+
+            if (maintainOrder) {
+                clone = items.slice();
+                clone.splice(x, 1);
+            } else {
+                clone = items.slice(x);
+            }
 
             choose(
                 clone,
