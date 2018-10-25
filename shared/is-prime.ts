@@ -15,7 +15,7 @@ export function $isPrime(a: number, useCache: boolean = true): boolean {
         }
     }
 
-    for (let factor: number = 2, value: number = a; factor <= value; factor++) {
+    for (let factor: number = 2, value: number = Math.sqrt(a); factor <= value; factor++) {
         value = a / factor;
 
         if (value !== 1 && $isInteger(value)) {
