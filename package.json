@@ -12,6 +12,7 @@
     "@types/log-update": "^2.0.0",
     "@types/node": "^8.0.33",
     "log-update": "^2.1.0",
+    "typescript": "^3.3.3",
     "yargs": "^12.0.2"
   },
   "devDependencies": {
