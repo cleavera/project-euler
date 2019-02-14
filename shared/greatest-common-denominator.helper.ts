@@ -1,10 +1,10 @@
-export function $gcd(a: number, b: number): number {
-    let c: number = a % b;
+export function $gcd<T extends number | bigint = number>(a: T, b: T): T {
+    let c: T = a % b as T;
 
     while (c > 0) {
         a = b;
         b = c;
-        c = a % b;
+        c = a % b as T;
     }
 
     return b;
