@@ -9,6 +9,8 @@
   "author": "Anthony Cleaver",
   "license": "ISC",
   "dependencies": {
+    "@cleavera/fs": "^1.1.0",
+    "@cleavera/utils": "^3.4.0",
     "@types/log-update": "^2.0.0",
     "@types/node": "^8.0.33",
     "log-update": "^2.1.0",
